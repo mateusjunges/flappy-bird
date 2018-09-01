@@ -2,8 +2,8 @@ function Bird() {
 
     this.y = height/2; //posiciona o pássaro no centro da janela, no eixo Y
     this.x = 64;      //distância do passáro em relação a borda esquerda da janela
-    elipse_a = 36;    //
-    elipse_b = 36;
+    elipse_a = 20;    //
+    elipse_b = 20;
 
     this.gravity = 0.6;//Força da gravidade, que faz com que o pássaro caia
                    // quando você não está controlando
@@ -11,7 +11,7 @@ function Bird() {
     this.lift = -15;//força que puxa o pássaro para cima
 
     this.show = function () {//desenha o pássaro
-        fill(255);
+        fill(255, 255, 48);
         ellipse(this.x, this.y, elipse_a, elipse_b);
 
     }
